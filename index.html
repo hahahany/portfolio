@@ -108,10 +108,10 @@
                         	<div class="text2_1">
 	                        	<span class="t1">“</span>
 	                        	<span class="t2">안녕하세요.</span>
-	                        	<span>코딩과 사랑에 빠진 신입 웹퍼블리셔 최한희 입니다.</span>
-	                        	<span>어릴적부터 컴퓨터와 친하게 지낸 덕분에 가족들 사이에서 'IT소녀'라고 불려졌다고 합니다.(웃음)</span>
-	                        	<span>이제는 그들과 보다 원활한 커뮤니케이션을 위해 그들의 언어인 HTML부터 배워 첫 입을 떼고,</span>
-	                        	<span>CSS로 존댓말을 배우며,JAVASCRIPT로 능동적인 소통을 시도하고 있습니다.</span>
+								<span>꼼꼼하게 빈틈을 채우는 <span>웹 퍼블리셔</span>strong>
+								<span>눈과 손이 빠른 <span>웹 퍼블리셔</span>strong>
+								<span>끊임없이 연구하는 <span>웹 퍼블리셔</span>strong>
+	                        	<span>코딩이 즐거운 웹 퍼블리셔 최한희 입니다.</span>
 	                        	<span class="t1">”</span>
                         	</div>
                         </div>
@@ -121,23 +121,18 @@
                     <div class="skill_wrap">
                     	<div class="skills">
 		                    <div class="skill">
-		                    	<span>Photoshop
-									<strong class="count">98</strong>
-		                    	</span>
-		                    </div>
-		                    <div class="skill">
-		                    	<span>illustration
-		                    		<strong class="count">90</strong>
-		                    	</span>
-		                    </div>
-		                    <div class="skill">
 		                    	<span>html
-		                    		<strong class="count">98</strong>
+									<strong class="count">100</strong>
 		                    	</span>
 		                    </div>
 		                    <div class="skill">
 		                    	<span>css
-		                    		<strong class="count">95</strong>
+		                    		<strong class="count">100</strong>
+		                    	</span>
+		                    </div>
+		                    <div class="skill">
+		                    	<span>sass
+		                    		<strong class="count">100</strong>
 		                    	</span>
 		                    </div>
 		                    <div class="skill">
@@ -148,6 +143,11 @@
 		                    <div class="skill">
 		                    	<span>Javascript
 		                    		<strong class="count">70</strong>
+		                    	</span>
+		                    </div>
+		                    <div class="skill">
+		                    	<span>react
+		                    		<strong class="count">30</strong>
 		                    	</span>
 		                    </div>
 	                    </div>
@@ -236,7 +236,7 @@
 						<div class="text">
 							<h2>Apple music</h2>
 							<p>
-								죄송합니다. 아직 미완성 된 현재 작업 중인 웹사이트입니다. 
+								현재 작업 중인 웹 사이트입니다. 
                              </p>
 							<div class="btn">
 								<a href="http://roymom2.dothome.co.kr/web/index.html" target="_blank">VIEW</a>
@@ -604,7 +604,7 @@
 							</figcaption>
 						</figure>
 						<div class="back">
-							<img src="img/back08.jpg" alt="내사진">
+							
 						</div>
 					</div>
 					<div class="item pic">
@@ -615,7 +615,7 @@
 							</figcaption>
 						</figure>
 						<div class="back">
-							<img src="img/back09.jpg" alt="내사진">
+							
 						</div>
 					</div>
 				</div>	
@@ -649,216 +649,212 @@
 	</div>
 	<!-- // contents -->
 
-<script src="js/jquery.min_1.12.4.js"></script>
-<script src="js/jquery-ui-1.12.1.min.js"></script>
-<script src="js/easypiechart.min.js"></script>
-<script src="js/skrollr.min.js"></script>
-<script src="js/custom.js"></script>
+	<script src="js/jquery.min_1.12.4.js"></script>
+	<script src="js/jquery-ui-1.12.1.min.js"></script>
+	<script src="js/easypiechart.min.js"></script>
+	<script src="js/skrollr.min.js"></script>
+	<script src="js/custom.js"></script>
 
-<script>
-	//skrollr
-    var s = skrollr.init({
-        edgeStrategy: 'set',
-        easing: 'linear'
-    });
+	<script>
+		//skrollr
+		var s = skrollr.init({
+			edgeStrategy: 'set',
+			easing: 'linear'
+		});
 
-    //scroll
-    $(window).scroll(function(){
-        let wScroll = $(this).scrollTop();
-        let sec3 = $("#section3 .sec3").offset().top;
-        let work = $("#section3 .sec3").offset().top + $(window).height()/2;;
-        let sec4 = $("#section4 .sec4").offset().top;
-        let text1 = $(".atit .text1").offset().top;
-        let text2 = $(".atit .text2").offset().top;
-        let aimg = $(".sec2_1 .aimg").offset().top;
-		let atit = $(".sec2_1 .atit").offset().top;
-       
-        $(".scroll").text(wScroll);
-
-		//scrollDown mouse
-		if(wScroll >= 800){
-			$("#mouse").css("border","2px solid #3366ff");
-			$("#wheel").css("background-color","#3366ff");
-			$("#mouse .scroll1").css("border-top","5px solid #3366ff");
-			$("#mouse .scroll2").css("border-top","5px solid #3366ff");
-			$("#mouse .scroll3").css("border-top","5px solid #3366ff");
-		} 
-		if(wScroll >= 3000){
-			$("#mouse").css("display","none");
-		}
-		if(wScroll >= sec3 ){
-			$("#mouse").css("border","2px solid #00ff33");
-			$("#wheel").css("background-color","#00ff33");
-			$("#mouse .scroll1").css("border-top","5px solid #00ff33");
-			$("#mouse .scroll2").css("border-top","5px solid #00ff33");
-			$("#mouse .scroll3").css("border-top","5px solid #00ff33");
-			$("#mouse").css("display","block");
-		}
-		if(wScroll >= work){
-			$("#mouse").css("display","none");
-		}
+		//scroll
+		$(window).scroll(function(){
+			let wScroll = $(this).scrollTop();
+			let sec3 = $("#section3 .sec3").offset().top;
+			let work = $("#section3 .sec3").offset().top + $(window).height()/2;;
+			let sec4 = $("#section4 .sec4").offset().top;
+			let text1 = $(".atit .text1").offset().top;
+			let text2 = $(".atit .text2").offset().top;
+			let aimg = $(".sec2_1 .aimg").offset().top;
+			let atit = $(".sec2_1 .atit").offset().top;
 		
-       //main text fixed
-        if(wScroll >= 1000 ){
-            $(".main_text h1").removeClass("fixed");
-        }else if(wScroll == 0){
-            $(".main_text h1").addClass("fixed");
-        }
+			$(".scroll").text(wScroll);
 
-       //about menu
-       if(wScroll >= 1800){
-            $(".opc1").addClass("off");
-        } else if(wScroll < 1800){
-            $(".opc1").removeClass("off");
-        }
-        if(wScroll >= 1900){
-            $(".about").addClass("right");
-        } else if(wScroll < 1900){
-            $(".about").removeClass("right");
-        }
-        
-        //work menu
-        if(wScroll >= sec3){
-            $(".opc2").addClass("off");
-        } else if(wScroll < sec3){
-            $(".opc2").removeClass("off");
-        }
-        if(wScroll >= sec3){
-            $(".Work").addClass("center");
-        } else if(wScroll < sec3){
-            $(".Work").removeClass("center");
-        }
-        
-        //contact menu
-        if(wScroll >= 46700){
-            $(".opc3").addClass("off");
-        } else if(wScroll < 46700){
-            $(".opc3").removeClass("off");
-        }
-        if(wScroll >= 46800){
-            $(".Contact").addClass("left");
-        } else if(wScroll < 46800){
-            $(".Contact").removeClass("left");
-        }
+			//scrollDown mouse
+			if(wScroll >= 800){
+				$("#mouse").css("border","2px solid #3366ff");
+				$("#wheel").css("background-color","#3366ff");
+				$("#mouse .scroll1").css("border-top","5px solid #3366ff");
+				$("#mouse .scroll2").css("border-top","5px solid #3366ff");
+				$("#mouse .scroll3").css("border-top","5px solid #3366ff");
+			} 
+			if(wScroll >= 3000){
+				$("#mouse").css("display","none");
+			}
+			if(wScroll >= sec3 ){
+				$("#mouse").css("border","2px solid #00ff33");
+				$("#wheel").css("background-color","#00ff33");
+				$("#mouse .scroll1").css("border-top","5px solid #00ff33");
+				$("#mouse .scroll2").css("border-top","5px solid #00ff33");
+				$("#mouse .scroll3").css("border-top","5px solid #00ff33");
+				$("#mouse").css("display","block");
+			}
+			if(wScroll >= work){
+				$("#mouse").css("display","none");
+			}
+			
+		//main text fixed
+			if(wScroll >= 1000 ){
+				$(".main_text h1").removeClass("fixed");
+			}else if(wScroll == 0){
+				$(".main_text h1").addClass("fixed");
+			}
 
-        //section2
-        if(wScroll >= text1 - $(window).height()/2){
-            $(".atit .text1 .t1").addClass("up");
-        }
+		//about menu
+		if(wScroll >= 1800){
+				$(".opc1").addClass("off");
+			} else if(wScroll < 1800){
+				$(".opc1").removeClass("off");
+			}
+			if(wScroll >= 1900){
+				$(".about").addClass("right");
+			} else if(wScroll < 1900){
+				$(".about").removeClass("right");
+			}
+			
+			//work menu
+			if(wScroll >= sec3){
+				$(".opc2").addClass("off");
+			} else if(wScroll < sec3){
+				$(".opc2").removeClass("off");
+			}
+			if(wScroll >= sec3){
+				$(".Work").addClass("center");
+			} else if(wScroll < sec3){
+				$(".Work").removeClass("center");
+			}
+			
+			//contact menu
+			if(wScroll >= 46700){
+				$(".opc3").addClass("off");
+			} else if(wScroll < 46700){
+				$(".opc3").removeClass("off");
+			}
+			if(wScroll >= 46800){
+				$(".Contact").addClass("left");
+			} else if(wScroll < 46800){
+				$(".Contact").removeClass("left");
+			}
 
-        //section3 fixed
-        if( wScroll >= $("#section3").offset().top ){
-            $("#section3 .sec3").addClass("pos");
-        } else {
-            $("#section3 .sec3").removeClass("pos");
-        }
-        
-       if(wScroll >= 27800){
-           $(".animation .s2 .text").addClass("show");
-        }
-        if(wScroll >= 28800){
-           $(".animation .s3 .text").addClass("show");
-        }
-        if(wScroll >= 29800){
-           $(".animation .s4 .text").addClass("show");
-        }
-        if(wScroll >= 30800){
-           $(".animation .s5 .text").addClass("show");
-        }
+			//section2
+			if(wScroll >= text1 - $(window).height()/2){
+				$(".atit .text1 .t1").addClass("up");
+			}
 
-        //section4 opacity1,fixed 
-        if( wScroll >= 45000 ){
-            $("#section4").addClass("opc");
-        } else {
-            $("#section4").removeClass("opc");
-        }
+			//section3 fixed
+			if( wScroll >= $("#section3").offset().top ){
+				$("#section3 .sec3").addClass("pos");
+			} else {
+				$("#section3 .sec3").removeClass("pos");
+			}
+			
+		if(wScroll >= 27800){
+			$(".animation .s2 .text").addClass("show");
+			}
+			if(wScroll >= 28800){
+			$(".animation .s3 .text").addClass("show");
+			}
+			if(wScroll >= 29800){
+			$(".animation .s4 .text").addClass("show");
+			}
+			if(wScroll >= 30800){
+			$(".animation .s5 .text").addClass("show");
+			}
 
-        if( wScroll >= 45000 ){
-            $("#section4 .sec4").addClass("pos");
-        } else {
-            $("#section4 .sec4").removeClass("pos");
-        }
+			//section4 opacity1,fixed 
+			if( wScroll >= 45000 ){
+				$("#section4").addClass("opc");
+			} else {
+				$("#section4").removeClass("opc");
+			}
 
-        if( wScroll >= 46500 ){
-            $("#section4 .sec4_1").addClass("pos");
-        } else {
-            $("#section4 .sec4_1").removeClass("pos");
-        }
-        
-        if ( wScroll > 27000 ){
-            $(".main_text h1").addClass("show");
-        } else {
-            $(".main_text h1").removeClass("show");
-        }
+			if( wScroll >= 45000 ){
+				$("#section4 .sec4").addClass("pos");
+			} else {
+				$("#section4 .sec4").removeClass("pos");
+			}
 
-    });
+			if( wScroll >= 46500 ){
+				$("#section4 .sec4_1").addClass("pos");
+			} else {
+				$("#section4 .sec4_1").removeClass("pos");
+			}
+			
+			if ( wScroll > 27000 ){
+				$(".main_text h1").addClass("show");
+			} else {
+				$(".main_text h1").removeClass("show");
+			}
 
-    //mobileBtn window popup
-	$(".mobileBtn").eq(0).click(function(e){
-        e.preventDefault();
-        window.open("../apple/apple01.html","appleSite","width=500, height=937, left=50, top=50, scrollbars=0, toolbar=0, menubar=0");
-	});
-	$(".mobileBtn").eq(1).click(function(e){
-        e.preventDefault();
-        window.open("../nike/index.html","nikeSite","width=500, height=937, left=50, top=50, scrollbars=0, toolbar=0, menubar=0");
-	});
+		});
 
-	//animation codpen btn
-	var aniBtn1= $(".animation .s2").find(".btn-wrap");
-	var aniBtn2= $(".animation .s3").find(".btn-wrap");
-	var aniBtn3= $(".animation .s4").find(".btn-wrap");
-	var aniBtn4= $(".animation .s5").find(".btn-wrap");
+		//mobileBtn window popup
+		$(".mobileBtn").eq(0).click(function(e){
+			e.preventDefault();
+			window.open("../apple/apple01.html","appleSite","width=500, height=937, left=50, top=50, scrollbars=0, toolbar=0, menubar=0");
+		});
+		$(".mobileBtn").eq(1).click(function(e){
+			e.preventDefault();
+			window.open("../nike/index.html","nikeSite","width=500, height=937, left=50, top=50, scrollbars=0, toolbar=0, menubar=0");
+		});
 
-	var modal1 = $(" .animation .s2").find("#modal");
-	var modal2 = $(" .animation .s3").find("#modal");
-	var modal3 = $(" .animation .s4").find("#modal");
-	var modal4 = $(" .animation .s5").find("#modal");
+		//animation codpen btn
+		var aniBtn1= $(".animation .s2").find(".btn-wrap");
+		var aniBtn2= $(".animation .s3").find(".btn-wrap");
+		var aniBtn3= $(".animation .s4").find(".btn-wrap");
+		var aniBtn4= $(".animation .s5").find(".btn-wrap");
 
-	var close1 = $(" .animation .s2").find(".close");
-	var close2 = $(" .animation .s3").find(".close");
-	var close3 = $(" .animation .s4").find(".close");
-	var close4 = $(" .animation .s5").find(".close");
+		var modal1 = $(" .animation .s2").find("#modal");
+		var modal2 = $(" .animation .s3").find("#modal");
+		var modal3 = $(" .animation .s4").find("#modal");
+		var modal4 = $(" .animation .s5").find("#modal");
 
-	
-	aniBtn1.click(function(e){
-		e.preventDefault();
-	modal1.removeClass().addClass("one");
-	});
-	close1.click(function(e){
-		e.preventDefault();
-		$(".s2 #modal").addClass("out");
-	});
+		var close1 = $(" .animation .s2").find(".close");
+		var close2 = $(" .animation .s3").find(".close");
+		var close3 = $(" .animation .s4").find(".close");
+		var close4 = $(" .animation .s5").find(".close");
 
-	aniBtn2.click(function(e){
-		e.preventDefault();
-	modal2.removeClass().addClass("one");
-	});
-	close2.click(function(e){
-		e.preventDefault();
-		$(".s3 #modal").addClass("out");
-	});
+		
+		aniBtn1.click(function(e){
+			e.preventDefault();
+		modal1.removeClass().addClass("one");
+		});
+		close1.click(function(e){
+			e.preventDefault();
+			$(".s2 #modal").addClass("out");
+		});
 
-	aniBtn3.click(function(e){
-		e.preventDefault();
-	modal3.removeClass().addClass("one");
-	});
-	close3.click(function(e){
-		e.preventDefault();
-		$(".s4 #modal").addClass("out");
-	});
+		aniBtn2.click(function(e){
+			e.preventDefault();
+		modal2.removeClass().addClass("one");
+		});
+		close2.click(function(e){
+			e.preventDefault();
+			$(".s3 #modal").addClass("out");
+		});
 
-	aniBtn4.click(function(e){
-		e.preventDefault();
-	modal4.removeClass().addClass("one");
-	});
-	close4.click(function(e){
-		e.preventDefault();
-		$(".s5 #modal").addClass("out");
-	});
+		aniBtn3.click(function(e){
+			e.preventDefault();
+		modal3.removeClass().addClass("one");
+		});
+		close3.click(function(e){
+			e.preventDefault();
+			$(".s4 #modal").addClass("out");
+		});
 
-	
-
-   
-</script>
+		aniBtn4.click(function(e){
+			e.preventDefault();
+		modal4.removeClass().addClass("one");
+		});
+		close4.click(function(e){
+			e.preventDefault();
+			$(".s5 #modal").addClass("out");
+		});
+	</script>
 </body>
 </html>
